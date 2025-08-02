@@ -29,7 +29,7 @@ jobs:
         fi
         
     - name: Install dependencies
-      run: uv pip install requests
+      run: uv sync --no-dev
         
     - name: Run Python script
       env:
