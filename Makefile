@@ -13,13 +13,13 @@ setup: ## Initial setup - install uv and create virtual environment
 	else \
 		echo "uv is already installed"; \
 	fi
-	uv sync
+	uv pip install requests pytest black flake8
 
 install: ## Install production dependencies
-	uv sync --no-dev
+	uv pip install requests
 
 install-dev: ## Install all dependencies (including dev dependencies)
-	uv sync
+	uv pip install requests pytest black flake8
 
 run: ## Run the daily request script locally (requires MIKEY_SECRET env var)
 	@if [ -z "$(MIKEY_SECRET)" ]; then \

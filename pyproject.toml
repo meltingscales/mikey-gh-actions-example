@@ -11,10 +11,6 @@ dependencies = [
     "requests>=2.31.0",
 ]
 
-[build-system]
-requires = ["hatchling"]
-build-backend = "hatchling.build"
-
 [tool.uv]
 dev-dependencies = [
     "pytest>=7.0.0",
