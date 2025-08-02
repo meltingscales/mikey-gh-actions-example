@@ -2,6 +2,8 @@
 
 An example for a friend.
 
+See this for a successful run: https://github.com/meltingscales/mikey-gh-actions-example/actions/workflows/daily-request.yml
+
 This repository contains a GitHub Actions workflow that runs a Python script daily at midnight to make a GET request to meltingscales.github.io with a Bearer token.
 
 ## Files
